@@ -1,0 +1,32 @@
+/* src/index.css (or your main CSS file) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: theme('fontFamily.mono'); /* Use Fira Code or monospace stack */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light mode focus outline */
+*:focus-visible {
+    outline: 2px solid #005CC5; /* code-accent-keyword */
+    outline-offset: 1px; /* Closer offset */
+}
+/* Dark mode focus outline */
+.dark *:focus-visible {
+    outline-color: #58A6FF; /* dark-code-accent-keyword */
+}
+
+/* Ensure prose in modal uses themed colors */
+.prose p, .prose ul, .prose li {
+    color: inherit; /* Inherit from parent to respect dark/light mode text colors */
+}
+.dark .dark\:prose-invert p, .dark .dark\:prose-invert ul, .dark .dark\:prose-invert li {
+    color: inherit;
+}

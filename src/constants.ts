@@ -1,11 +1,11 @@
 import { Project, NavLink } from './types';
 
-// IMPORTANT: Please update with your personal information.
-export const MY_NAME = "Alessandro Brunello"; // Replace with your actual name
-export const MY_TAGLINE = "Crafting elegant solutions, embracing new challenges."; // Customize your tagline
-export const MY_EMAIL = "alebrum97@gmail.com"; // Replace with your email
-export const MY_GITHUB_USERNAME = "Armaggheddon"; // Replace with your GitHub username
-export const MY_HUGGINGFACE_USERNAME = "Armaggheddon97"; // Replace with your Hugging Face username
+
+export const MY_NAME = "Alessandro Brunello";
+export const MY_TAGLINE = "Crafting elegant solutions, embracing new challenges.";
+export const MY_EMAIL = "alebrum97@gmail.com";
+export const MY_GITHUB_USERNAME = "Armaggheddon";
+export const MY_HUGGINGFACE_USERNAME = "Armaggheddon";
 
 export const NAV_LINKS: NavLink[] = [
   { id: 'home', label: 'Home', href: '#home' },
@@ -15,6 +15,32 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const PROJECTS_DATA: Project[] = [
+  {
+    "id": "proj_retinanet_demystified",
+    "title": "RetinaNet Demystified",
+    "description": "A simple and deeply commented PyTorch implementation of the RetinaNet paper, built as an educational resource. 📚 Demystify the core concepts of object detection with code that sticks closely to the original paper. 💡",
+    "technologies": ["Python", "PyTorch", "Jupyter Notebook", "Google Colab", "ResNet"],
+    "githubUrl": "https://github.com/Armaggheddon/retinanet_demystified",
+    "liveDemoUrl": "https://colab.research.google.com/github/Armaggheddon/retinanet_demystified/blob/main/run_in_colab.ipynb",
+    "logoUrl": "https://github.com/Armaggheddon/retinanet_demystified/raw/main/.github/cover_image.png",
+    "isTextLikeLogo": false,
+    "displayPopupTextTitle": true,
+    "images": [
+      "https://github.com/Armaggheddon/retinanet_demystified/raw/main/.github/cover_image.png",
+      "https://github.com/Armaggheddon/retinanet_demystified/raw/main/plots/train_eval_avg_loss.png",
+      "https://github.com/Armaggheddon/retinanet_demystified/raw/main/plots/training_metrics.png",
+      "https://github.com/Armaggheddon/retinanet_demystified/raw/main/plots/evaluation_loss_metrics.png",
+      "https://github.com/Armaggheddon/retinanet_demystified/raw/main/model_detections.jpg"
+    ],
+    "keyFeatures": [
+      "The implementation sticks closely to the concepts described in the original paper.",
+      "Code blocks are linked back to the specific sections of the paper they implement.",
+      "Supports ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152 backbones out of the box.",
+      "Intentionally omits features like custom BatchNorm layers in the heads to keep the focus on the fundamental architecture."
+    ],
+    "impact": "This project serves as an educational resource for anyone looking to understand how RetinaNet works under the hood. By stripping away production-level optimizations, it allows a clear focus on the core concepts and makes the original paper more accessible.",
+    "role": "The project was developed as an educational resource to provide a clear and simple implementation of the RetinaNet paper."
+  },
   {
     "id": "proj_voiceflow",
     "title": "VoiceFlow",
@@ -219,7 +245,7 @@ export const PROJECTS_DATA: Project[] = [
 
 export const SOCIAL_LINKS = {
   github: `https://github.com/${MY_GITHUB_USERNAME}`,
-  linkedin: `https://www.linkedin.com/in/alessandro-brunello-222650219/`,
+  linkedin: `https://www.linkedin.com/in/brunelloalessandro/`,
   email: `mailto:${MY_EMAIL}`,
   huggingface: `https://huggingface.co/${MY_HUGGINGFACE_USERNAME}`
 };

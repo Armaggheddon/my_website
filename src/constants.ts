@@ -16,6 +16,32 @@ export const NAV_LINKS: NavLink[] = [
 
 export const PROJECTS_DATA: Project[] = [
   {
+    "id": "proj_yolo11_doc_layout",
+    "title": "YOLOv11 Document Layout Analysis",
+    "description": "This project offers a suite of production-ready YOLOv11 models 🚀 for automated document layout analysis. It's built to instantly deconstruct documents by accurately identifying key elements like text blocks, tables, figures, and titles. 📄➡️🧠 The goal is to provide a lightweight yet powerful tool that can be easily integrated into any document AI pipeline. ⚡",
+    "technologies": ["Python", "Ultralytics", "YOLOv11", "Hugging Face Hub", "Hugging Face Spaces"],
+    "githubUrl": "https://github.com/Armaggheddon/yolo11_doc_layout",
+    "liveDemoUrl": "https://huggingface.co/spaces/Armaggheddon/yolo11-document-layout",
+    "logoUrl": "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/plots/logo.png",
+    "isTextLikeLogo": false,
+    "displayPopupTextTitle": true,
+    "images": [
+      "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/plots/logo.png",
+      "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/plots/n_s_m_comparison/map50_95_per_label.png",
+      "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/plots/n_s_m_comparison/box_precision_per_label.png",
+      "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/plots/yolo11n_best/box_precision_percentage_improvement_per_label.png",
+      "https://github.com/Armaggheddon/yolo11_doc_layout/raw/main/runs/train4/confusion_matrix_normalized.png"
+    ],
+    "keyFeatures": [
+      "Provides ready-to-use nano, small, and medium models, fine-tuned for high performance.",
+      "High-accuracy detection of 11 distinct layout types from the challenging DocLayNet dataset.",
+      "The lightweight nano model is optimized to provide an excellent balance of speed and accuracy.",
+      "Models are easily accessible and deployable via the Hugging Face Hub.",
+      "Includes a comprehensive analysis of model performance to guide real-world deployment choices."
+    ],
+    "impact": "This project makes advanced document layout analysis accessible to developers. By providing reliable, pre-trained models, it simplifies a critical first step in document AI pipelines, enabling more robust data extraction, content categorization, and automated document processing workflows."
+  },
+  {
     "id": "proj_retinanet_demystified",
     "title": "RetinaNet Demystified",
     "description": "A simple and deeply commented PyTorch implementation of the RetinaNet paper, built as an educational resource. 📚 Demystify the core concepts of object detection with code that sticks closely to the original paper. 💡",
